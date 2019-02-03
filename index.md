@@ -41,3 +41,14 @@ Pozwoliłem sobie spisać podstawowe kryteria, które oferta pracy musi spełni�
   - tematyka projektu
   - wielkość zespołu projektowego 
   - czy to projekt nowego systemu czy rozwój istniejącego? Jeśli rozwój to ile lat ma system?
+  
+# CV
+  
+## Doświadczenie zawodowe
+- wrz 2017 - obecnie | Senior Java Developer w [Syncron](https://www.syncron.com/)
+  - Full-stack development of company main product [Syncron Inventory](https://www.syncron.com/solutions/inventory-management/) (Spring, Hibernate, Java 8, JSF).
+- gru 2014 – sie 2017 | Starszy Programista Java w [BMS](https://bms.com.pl/)
+  - Development of back-office system for a major bank department (Spring, Hibernate, Java 8, AngularJS 1.2).
+- mar 2014 – lis 2014 | Programista Java w [Lingaro](https://lingarogroup.com/)
+  - smaller projects in Groovy, Grails, JavaScript
+- a reszta to już prehistoria ;)
