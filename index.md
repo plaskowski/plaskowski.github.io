@@ -9,5 +9,5 @@ Cieszę się, że trafiłaś(eś) na mój profil kandydata w sieci. Znajdziesz t
 p KROPKA laskowski MAŁPA echo KROPKA waw KROPKA pl
 
 ### Dostępność
-*Stan z 3 lutego 2019* Jestem zadowolony z obecnej pracy więc nigdzie się nie wybieram, ale w razie upadku meteorytu pracuję na UoP ze standardowym okresem wypowiedzienia.
+*(Stan z 3 lutego 2019)* Jestem zadowolony z obecnej pracy więc nigdzie się nie wybieram, ale w razie upadku meteorytu pracuję na UoP ze standardowym okresem wypowiedzienia.
 
