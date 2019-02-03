@@ -5,7 +5,7 @@
 7 lat doświadczenia jako programista w różnych technologiach, z tego 5 lat Java server-side i technologie webowe. Stawiam na jakość kodu, preferuję pracę po stronie back-endu.
 
 # Witaj strudzony rekruterze!
-Cieszę się, że trafiłaś(eś) na mój profil kandydata w sieci. Znajdziesz tu opis jakich projektów szukam (a jakich nie) oraz moje aktualne CV. Jeśli wydaje Ci się, że masz ofertę spełniającą wszystkie krytyczne wymagania oraz większość pozostałych nie wachaj się ani chwili!
+Cieszę się, że trafiłaś(eś) na mój profil zawodowy w sieci. Znajdziesz tu opis jakich projektów szukam (a jakich nie) oraz moje aktualne CV. Jeśli wydaje Ci się, że masz ofertę spełniającą wszystkie krytyczne wymagania oraz większość pozostałych nie wachaj się ani chwili!
 
 ### Kontakt
 p KROPKA laskowski MAŁPA echo KROPKA waw KROPKA pl
