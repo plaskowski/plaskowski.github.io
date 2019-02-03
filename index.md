@@ -52,3 +52,12 @@ Pozwoliłem sobie spisać podstawowe kryteria, które oferta pracy musi spełni�
 - mar 2014 – lis 2014 | Programista Java w [Lingaro](https://lingarogroup.com/)
   - smaller projects in Groovy, Grails, JavaScript
 - a reszta to już prehistoria ;)
+
+## Biegłość
+- clean code,
+- code review, 
+- angielski (B2),
+- Java 8, Spring 4, Hibernate 4.2, AngularJS 1.2, JS+HTML+CSS.
+
+# Wykształcenie
+- Magister informatyki na wydziale [MIM Uniwersytetu Warszawskiego](https://www.mimuw.edu.pl/) (2006-2011, dyplom w 2013)
