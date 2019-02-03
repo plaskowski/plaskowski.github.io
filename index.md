@@ -19,7 +19,7 @@ Pozwoliłem sobie spisać podstawowe kryteria, które oferta pracy musi spełni�
 
 ### Krytyczne wymagania
 - technologie: Java server-side (conajmniej Java 8), może być trochę front-endu
-- lokalizacja: w bezpośrednim sąsiedztwie metra (linii M1) lub ścisłe centrum lub północna część Warszawy
+- lokalizacja: w bezpośrednim sąsiedztwie pierwszej linii metra lub północna część Warszawy
 
 ### Co zdyskwalifikuje ofertę
 - open space powyżej 12 osób
