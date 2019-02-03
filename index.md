@@ -59,5 +59,5 @@ Pozwoliłem sobie spisać podstawowe kryteria, które oferta pracy musi spełni�
 - angielski (B2),
 - Java 8, Spring 4, Hibernate 4.2, AngularJS 1.2, JS+HTML+CSS.
 
-# Wykształcenie
+## Wykształcenie
 - Magister informatyki na wydziale [MIM Uniwersytetu Warszawskiego](https://www.mimuw.edu.pl/) (2006-2011, dyplom w 2013)
