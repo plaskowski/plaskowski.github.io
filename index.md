@@ -11,7 +11,7 @@ Cieszę się, że trafiłaś(eś) na mój profil zawodowy w sieci. Znajdziesz tu
 p KROPKA laskowski MAŁPA echo KROPKA waw KROPKA pl
 
 ### Dostępność
-*(Stan z 3 lutego 2019)* Jestem zadowolony z obecnej pracy więc nigdzie się nie wybieram, ale w razie upadku meteorytu pracuję na UoP ze standardowym okresem wypowiedzienia.
+*(Stan z 26 kwietnia 2020)* Jestem zadowolony z obecnej pracy więc nigdzie się nie wybieram, ale w razie upadku meteorytu pracuję na UoP ze standardowym okresem wypowiedzienia.
 
 # Szczegółowe oczekiwania co do ofert
 Z góry dziękuję za Pani/Pana czas poświęcony na zapoznanie się z poniższymi wymaganiami, a w rezultacie za mój czas zaoszczędzony na nie czytaniu nieadekwatnych ofert.
