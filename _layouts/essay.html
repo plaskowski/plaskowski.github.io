@@ -3,7 +3,7 @@ layout: default
 ---
 {% if page.status == 'draft' %}
 <div class="draft-banner">
-  Draft — peer review in progress &nbsp;·&nbsp; <a href="#feedback">Leave feedback</a>
+  Draft — peer review in progress &nbsp;·&nbsp; <a href="https://app.slack.com/client/E0684ULT1R9/D027DAU45NJ" target="_blank" rel="noopener">feedback over Company Slack DM</a>
 </div>
 {% endif %}
 
@@ -34,6 +34,16 @@ layout: default
   .essay-meta {
     font-size: 0.85rem;
     color: var(--muted);
+    margin-bottom: 1.75rem;
+  }
+  .essay-opening {
+    border-left: 3px solid var(--accent);
+    margin: 0;
+    padding: 0.5rem 0 0.5rem 1.25rem;
+    font-style: italic;
+    color: var(--muted);
+    font-size: 1rem;
+    line-height: 1.7;
   }
 
   .essay-body h2 {
@@ -71,6 +81,11 @@ layout: default
       <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: "%B %-d, %Y" }}</time>
       {% if page.status == 'draft' %}&nbsp;·&nbsp; <em>draft</em>{% endif %}
     </p>
+    {% if page.opening %}
+    <blockquote class="essay-opening">
+      {{ page.opening | newline_to_br }}
+    </blockquote>
+    {% endif %}
   </header>
 
   <div class="essay-body">

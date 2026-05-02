@@ -3,11 +3,6 @@ description: "A quiet outlet for loud thoughts about software engineering."
 author: Piotr Laskowski
 url: "https://plaskowski.github.io"
 
-theme: minima
-
-minima:
-  skin: classic
-
 permalink: pretty
 
 exclude:
