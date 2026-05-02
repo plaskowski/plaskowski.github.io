@@ -15,8 +15,8 @@ title: Piotr Laskowski
 <p class="section-label" style="margin-top: 2.5rem;">Notes</p>
 
 <div class="essay-card">
-  <a class="card-link" href="/notes/agentic-coding-pains-catalog/" aria-label="Agentic Coding: A Professional Pain Points Catalog"></a>
-  <h2>Agentic Coding: A Professional Pain Points Catalog</h2>
-  <p class="subtitle">What actually breaks when you use AI coding agents in real engineering work.</p>
+  <a class="card-link" href="/notes/agentic-coding-pains-catalog/" aria-label="Agentic Coding — the Enterprise Engineer's Patient Leaflet"></a>
+  <h2>Agentic Coding — the Enterprise Engineer's Patient Leaflet</h2>
+  <p class="subtitle">What breaks when coding agents meet enterprise software delivery.</p>
   <p class="meta">May 2, 2026 &nbsp;·&nbsp; draft</p>
 </div>
