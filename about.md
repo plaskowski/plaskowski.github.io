@@ -11,4 +11,4 @@ Hi, my name is Piotr Laskowski and I am a senior SWE with 15+ years of experienc
 
 ## About this site
 
-After years of hesitation I created this outlet for all the "klebiace sie rozkminy o procesie wytworczym" in hope that they will go calm after being put out.
+After years of hesitation I created this outlet for all the nagging, swirling thoughts about the delivery process, in hope that they will go calm after being put out.
