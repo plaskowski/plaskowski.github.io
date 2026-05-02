@@ -5,7 +5,7 @@ subtitle: "Why coding agents automate the easy part and multiply the hard part"
 date: 2026-05-02
 status: draft
 opening: |
-  Many still believe you can point a coding agent at an existing enterprise codebase, hand it a real task, and get something shippable back. After ten months of trying hard, I say: no f***ing way — unless you are fine with exhausting babysitting. The agent is like a junior engineer who brings a clean build and thinks the work is done — eager to rewrite the foundations, blind to every constraint or pattern that isn't in the diff. The difference: this junior engineer never learns, makes random mistakes, and produces faster than you can review. Build the harness, or go home (scanning endless chat transcripts).
+  Many still believe you can point a coding agent at an existing enterprise codebase, hand it a real task, and get something shippable back. After ten months of trying hard, I say: no freaking way — unless you are fine with exhausting babysitting. The agent is like a junior engineer who brings a clean build and thinks the work is done — eager to rewrite the foundations, blind to every constraint or pattern that isn't in the diff. The difference: this junior engineer never learns, makes random mistakes, and produces faster than you can review. Build the harness, or go home (scanning endless chat transcripts).
 ---
 
 ## Background
