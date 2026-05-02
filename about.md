@@ -3,14 +3,16 @@ layout: default
 title: About
 ---
 
-## About
+## About me
 
-I'm Piotr Laskowski — a senior software engineer currently at Box, where I work on backend platform services.
+I'm Piotr Laskowski — a senior software engineer at Box, working on backend platform services. Over a decade in the industry, mostly on the kind of work that doesn't ship features but makes features possible.
 
-This is a writing archive, not a blog. I write when I have something worth saying. Right now, that is one essay about the real cost of AI coding agents in production software work.
+[LinkedIn](https://www.linkedin.com/in/piotr-laskowski-waw/)
 
-The threshold for re-labeling this a blog: three to five published pieces.
+## About this site
 
----
+A writing outlet, not a blog. I write when I have something worth saying — usually something that has been bothering me long enough to deserve a proper argument.
 
-*Occasional essays from a senior SWE who needed an outlet.*
+Right now that means essays and notes on AI coding agents: what they actually cost in professional software work, and what it takes to make them useful past the honeymoon phase.
+
+The threshold for calling this a blog: three to five published pieces.
