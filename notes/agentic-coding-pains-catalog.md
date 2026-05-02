@@ -129,9 +129,7 @@ Problems with keeping surrounding systems of record aligned with agent work.
 - **Manual work orchestration** — surrounding work-state tracking remains human-owned instead of agent-assisted. Examples: open items, decisions, follow-ups, Jira state, PR state, and stakeholder updates.
 - **No external-state sync** — agent progress does not automatically update surrounding systems of record. Examples: Jira, PR description, notes, next actions, or manager/team status.
 
-## Appendix
-
-### Resulting Human Cost
+## Appendix A — Resulting Human Cost
 
 These are the downstream costs that accumulate when the gaps above are not addressed. They are not separate failure modes; they are the human price of everything above.
 
@@ -142,6 +140,6 @@ These are the downstream costs that accumulate when the gaps above are not addre
 - **Trust erosion** — because failures are subtle and verification is weak, every generated change starts to feel suspicious.
 - **Overload pressure** — because agents can produce more work than the human can safely inspect, the user is tempted to keep too many risky threads in flight.
 
-### Intentional exclusions
+## Appendix B — Intentional Exclusions
 
 Out of scope for this catalog: governance and compliance, privacy and data handling, licensing and IP risk, token cost and usage accounting, vendor-specific plan or product differences, multi-session workspace management, tool and window containment across IDE/browser/terminal/OS, cross-session hierarchy and agent-to-agent coordination, and backward compatibility (shipped versions, persisted data, in-flight migrations).
