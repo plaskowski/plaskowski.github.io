@@ -5,7 +5,7 @@ title: About
 
 ## About me
 
-I'm Piotr Laskowski. Fifteen years in the industry, currently working at Box as a senior software engineer on backend platform — the layer that makes other teams' features possible and gets blamed when it isn't. Long enough to have watched several waves of tools arrive promising to change everything, change something, and mostly create new categories of work. Long enough to have opinions about what's actually going on.
+I'm Piotr Laskowski. Fifteen years in the industry, working on backend platform — the layer that makes other teams' features possible and gets blamed when it isn't. Long enough to have watched several waves of tools arrive promising to change everything, change something, and mostly create new categories of work. Long enough to have opinions about what's actually going on.
 
 [LinkedIn](https://www.linkedin.com/in/piotr-laskowski-waw/)
 
