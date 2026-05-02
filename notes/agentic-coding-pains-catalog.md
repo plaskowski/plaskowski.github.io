@@ -18,6 +18,7 @@ The catalog groups problems by where they show up in the workflow. Within each g
 ## Foundational Misalignment
 
 Agent output is locally correct but globally unaligned with the project's technical and business decisions. The agent never checks for alignment. The engineer is left to bridge the gap on every change.
+{: .section-lead}
 
 - **Pattern drift** — introduces new code-level patterns (naming, error handling, module organization, idioms) instead of reusing those already established in the codebase.
 - **Product treated as scratch space** — overwrites the running product's current behavior — the contract with users — whenever doing so is the shortest path to a working solution.
@@ -30,6 +31,7 @@ Agent output is locally correct but globally unaligned with the project's techni
 ## Workflow and Playbook Execution
 
 Problems with making the agent follow the right workflow at the right level of autonomy.
+{: .section-lead}
 
 - **Manual playbook enforcement** — in paid work, common task types follow known playbooks, but the user must manually impose the workflow instead of the agent executing it. Examples: phases, checkpoints, artifacts, and stop conditions.
 - **Manual step-mode tuning** — user must manually adjust model level, permission mode, and autonomy for each playbook step. Examples: exploration, planning, implementation, verification, and cleanup need different defaults.
@@ -39,6 +41,7 @@ Problems with making the agent follow the right workflow at the right level of a
 ## Scope, Design, and Ambiguity Management
 
 Problems with defining, aligning, and protecting the intended change before and during implementation.
+{: .section-lead}
 
 - **No explicit change-scope contract** — before execution, the agent does not clearly declare the intended change scope. Examples: main classes/files, structural changes, build/pipeline/config impact, and acceptance criteria.
 - **Unlayered planning** — agent presents different decision levels in one mixed wall of text instead of separating them. Examples: top-level direction, design choices, naming, file edits, tests, and implementation minutiae.
@@ -53,6 +56,7 @@ Problems with defining, aligning, and protecting the intended change before and 
 ## Context and Session Hygiene
 
 Problems caused by stale, noisy, or poorly isolated session context.
+{: .section-lead}
 
 - **Session contamination** — wrong assumptions and dead ends remain in context instead of being truncated back to the last healthy point.
 - **Manual context-size babysitting** — the user must decide when stale or noisy context has made the session unreliable instead of the agent pruning, compressing, or isolating it.
@@ -61,6 +65,7 @@ Problems caused by stale, noisy, or poorly isolated session context.
 ## Supervision Surface and Output Structure
 
 Problems with consuming agent output through chat as the main supervision interface.
+{: .section-lead}
 
 - **Chat-first supervision trap** — chat fits only babysitting mode, and even then it is too verbose and fast to follow; autonomous work needs structured task state instead of an endless scrolling transcript.
 - **No turn boundaries** — chat is an endless scroll without clear per-turn units, making it hard to inspect what happened in each request/response cycle.
@@ -71,6 +76,7 @@ Problems with consuming agent output through chat as the main supervision interf
 ## Live Supervision State
 
 Problems with seeing the agent's current operational state while work is active.
+{: .section-lead}
 
 - **No progress model** — user cannot easily see which phase the agent is in: understanding, planning, editing, debugging, verifying, or cleanup.
 - **Missing checkpoint packet** — at natural pause points, the agent does not present a compact, structured state packet. Examples: current goal, completed work, key decisions, changed files, open risks, proposed next step, and available user actions (continue, redirect, pause, stop).
@@ -80,6 +86,7 @@ Problems with seeing the agent's current operational state while work is active.
 ## Blockers, Hypotheses, and Stop Conditions
 
 Problems with seeing uncertainty, failed paths, blockers, and when the agent should stop.
+{: .section-lead}
 
 - **Assumption opacity** — does not surface the assumptions it made unless asked afterwards.
 - **Struggle hiding** — presents the final result without exposing problems it hit along the way, even though the user needs to judge whether those problems were solved correctly.
@@ -91,6 +98,7 @@ Problems with seeing uncertainty, failed paths, blockers, and when the agent sho
 ## Durable Work State
 
 Problems with preserving agent work as trustworthy state for later review, reuse, or resumption.
+{: .section-lead}
 
 - **No session continuity** — each session starts blank: no understanding of the product, codebase, or prior decisions survives between sessions, so every run must rediscover context from scratch.
 - **No durable work packet** — the main work artifacts are not bundled as one resumable unit of work. Examples: branch, prompt, task notes, ticket, PR, session state, and verification evidence.
@@ -104,6 +112,7 @@ Problems with preserving agent work as trustworthy state for later review, reuse
 ## Verification, Review, and Credibility
 
 Problems with proving, reviewing, and trusting agent-generated changes.
+{: .section-lead}
 
 - **Missing verification receipt** — there is no deterministic end-of-run proof that automated verification actually happened, which commands ran, and whether they passed.
 - **Diff-as-communication breakdown** — with AI-generated output volume, raw code diff becomes an inefficient communication layer; reviewer needs higher-level intent, scope, decisions, and risk summary before reading line-level changes.
@@ -119,6 +128,7 @@ Problems with proving, reviewing, and trusting agent-generated changes.
 ## Recurring Implementation Failure Modes
 
 Common coding and debugging patterns that make generated changes harder to accept.
+{: .section-lead}
 
 - **Manualized IDE chores** — agent wastes time on routine IDE-level cleanup that should be delegated to deterministic tooling. Examples: Java imports, formatting, obvious namespace resolution.
 - **Premature test fixing** — agent starts fixing unit tests before the target code shape, architecture fit, and pattern alignment have been settled.
@@ -130,6 +140,7 @@ Common coding and debugging patterns that make generated changes harder to accep
 ## External State and System Integration
 
 Problems with keeping surrounding systems of record aligned with agent work.
+{: .section-lead}
 
 - **Manual work orchestration** — surrounding work-state tracking remains human-owned instead of agent-assisted. Examples: open items, decisions, follow-ups, Jira state, PR state, and stakeholder updates.
 - **No external-state sync** — agent progress does not automatically update surrounding systems of record. Examples: Jira, PR description, notes, next actions, or manager/team status.
@@ -137,6 +148,7 @@ Problems with keeping surrounding systems of record aligned with agent work.
 ## Appendix A — Resulting Human Cost
 
 These are the downstream costs that accumulate when the gaps above are not addressed. They are not separate failure modes; they are the human price of everything above.
+{: .section-lead}
 
 - **Engineer as alignment layer** — because outputs are technically valid but system-misaligned, the engineer must bridge the gap on every change instead of receiving aligned work.
 - **Babysitting fatigue** — because progress, assumptions, and blockers are not visible enough, the user must stay alert while the agent works.
@@ -148,3 +160,4 @@ These are the downstream costs that accumulate when the gaps above are not addre
 ## Appendix B — Intentional Exclusions
 
 Out of scope for this catalog: governance and compliance, privacy and data handling, licensing and IP risk, token cost and usage accounting, vendor-specific plan or product differences, multi-session workspace management, tool and window containment across IDE/browser/terminal/OS, cross-session hierarchy and agent-to-agent coordination, and backward compatibility (shipped versions, persisted data, in-flight migrations).
+{: .section-lead}

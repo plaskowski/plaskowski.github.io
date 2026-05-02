@@ -208,6 +208,11 @@ main {
   color: var(--accent-light);
 }
 .note-body p { margin: 0 0 1.25rem; }
+.section-lead {
+  font-style: italic;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
 .note-body ul {
   padding-left: 1.25rem;
   margin: 0 0 1.25rem;
