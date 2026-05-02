@@ -12,7 +12,3 @@ I'm Piotr Laskowski — a senior software engineer at Box, working on backend pl
 ## About this site
 
 A writing outlet, not a blog. I write when I have something worth saying — usually something that has been bothering me long enough to deserve a proper argument.
-
-Right now that means essays and notes on AI coding agents: what they actually cost in professional software work, and what it takes to make them useful past the honeymoon phase.
-
-The threshold for calling this a blog: three to five published pieces.
