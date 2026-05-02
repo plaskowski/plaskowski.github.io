@@ -226,8 +226,6 @@ main {
   margin-bottom: 0;
 }
 .note-body li ul li {
-  font-size: 0.95rem;
-  color: var(--muted);
   margin-bottom: 0.3rem;
 }
 
