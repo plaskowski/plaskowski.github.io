@@ -5,7 +5,7 @@ title: About
 
 ## About me
 
-Hi, my name is Piotr Laskowski and I am a senior SWE with 15+ years of experience in enterprise software development (backend focused).
+I'm Piotr Laskowski, a senior software engineer with 15+ years of experience in B2B software products (mainly backend).
 
 [LinkedIn](https://www.linkedin.com/in/piotr-laskowski-waw/)
 
