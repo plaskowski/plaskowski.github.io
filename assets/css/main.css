@@ -48,7 +48,7 @@ a:hover { text-decoration: underline; }
 }
 .site-name { color: var(--accent); }
 .site-title:hover { text-decoration: none; }
-.site-title:hover .site-name { color: #fff; }
+.site-title:hover .site-name { color: #d8d8d8; }
 .site-title .dev-suffix {
   font-family: "JetBrains Mono", ui-monospace, monospace;
   font-weight: 400;
@@ -62,7 +62,7 @@ a:hover { text-decoration: underline; }
   background-clip: text;
 }
 .site-title:hover .dev-suffix {
-  background: linear-gradient(100deg, #fff 0%, #c0d8ff 100%);
+  background: linear-gradient(100deg, #d8d8d8 0%, #c0d8ff 100%);
   -webkit-background-clip: text;
   background-clip: text;
 }
@@ -218,7 +218,7 @@ main {
   color: var(--accent);
 }
 .essay-card:hover h2 {
-  color: #fff;
+  color: #d8d8d8;
   text-decoration: underline;
 }
 .essay-card .card-link {
