@@ -1,12 +1,6 @@
 ---
 layout: default
 ---
-{% if page.status == 'draft' %}
-<div class="draft-banner">
-  Draft — peer review in progress &nbsp;·&nbsp; <a href="https://app.slack.com/client/E0684ULT1R9/D027DAU45NJ" target="_blank" rel="noopener">feedback over Company Slack DM</a>
-</div>
-{% endif %}
-
 <article>
   <header class="note-header">
     <h1>{{ page.title }}</h1>
@@ -17,6 +11,11 @@ layout: default
       <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: "%B %-d, %Y" }}</time>
       {% if page.status == 'draft' %}&nbsp;·&nbsp; <em>draft</em>{% endif %}
     </p>
+    {% if page.status == 'draft' %}
+    <div class="draft-banner">
+      Draft — peer review in progress &nbsp;·&nbsp; <a href="https://app.slack.com/client/E0684ULT1R9/D027DAU45NJ" target="_blank" rel="noopener">feedback over Company Slack DM</a>
+    </div>
+    {% endif %}
   </header>
 
   <div class="note-body">
