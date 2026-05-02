@@ -5,7 +5,7 @@ title: About
 
 ## About me
 
-I'm Piotr Laskowski, a senior software engineer with 15+ years of experience in B2B software products (mainly backend).
+I'm Piotr Laskowski, a senior software engineer with 15+ years of experience in long-lived B2B software products (mainly backend).
 
 [LinkedIn](https://www.linkedin.com/in/piotr-laskowski-waw/)
 
