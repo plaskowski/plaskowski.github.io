@@ -56,7 +56,9 @@
       flex-shrink: 0;
       line-height: 1.2;
     }
-    .site-title:hover { text-decoration: none; color: var(--accent); }
+    .site-name { color: var(--accent); }
+    .site-title:hover { text-decoration: none; }
+    .site-title:hover .site-name { color: #fff; }
     .site-title .dev-suffix {
       font-family: "JetBrains Mono", ui-monospace, monospace;
       font-weight: 400;
@@ -68,7 +70,11 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
-      filter: drop-shadow(0 0 6px rgba(110,168,254,0.7)) drop-shadow(0 0 18px rgba(167,139,250,0.4));
+    }
+    .site-title:hover .dev-suffix {
+      background: linear-gradient(100deg, #fff 0%, #c0d8ff 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
     }
     .site-tagline {
       font-size: 0.8rem;
@@ -103,7 +109,7 @@
 
   <header class="site-header">
     <div class="site-title-group">
-      <a class="site-title" href="/">{{ site.title }}<span class="dev-suffix">/dev/swe-outlet</span></a>
+      <a class="site-title" href="/"><span class="site-name">{{ site.title }}</span><span class="dev-suffix">/dev/swe-outlet</span></a>
       <span class="site-tagline">{{ site.description }}</span>
     </div>
     <nav>

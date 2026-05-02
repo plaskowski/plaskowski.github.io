@@ -11,7 +11,6 @@ title: Piotr Laskowski
     padding: 1.25rem 1.5rem;
     color: inherit;
     display: block;
-    transition: border-color 0.15s;
     background: var(--surface);
   }
   .essay-card:hover { border-color: var(--accent); }
@@ -19,14 +18,17 @@ title: Piotr Laskowski
     font-size: 1.2rem;
     margin: 0 0 0.3rem;
   }
-  .essay-card h2 a {
-    color: var(--accent);
-    text-decoration: none;
-  }
-  .essay-card h2 a::after {
-    content: "";
+  .essay-card .card-link {
     position: absolute;
     inset: 0;
+    z-index: 1;
+  }
+  .essay-card h2 {
+    color: var(--accent);
+  }
+  .essay-card:hover h2 {
+    color: #fff;
+    text-decoration: underline;
   }
   .essay-card .subtitle {
     font-size: 0.95rem;
@@ -51,7 +53,8 @@ title: Piotr Laskowski
 <p class="section-label">Essays</p>
 
 <div class="essay-card">
-  <h2><a href="/essays/build-the-harness-or-go-home/">The Honeymoon Is Over: Build the Harness or Go Home</a></h2>
+  <a class="card-link" href="/essays/build-the-harness-or-go-home/" aria-label="The Honeymoon Is Over: Build the Harness or Go Home"></a>
+  <h2>The Honeymoon Is Over: Build the Harness or Go Home</h2>
   <p class="subtitle">Why coding agents automate the easy part and multiply the hard part.</p>
   <p class="meta">May 2, 2026 &nbsp;·&nbsp; draft</p>
 </div>
