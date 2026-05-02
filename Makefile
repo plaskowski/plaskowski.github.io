@@ -1,22 +1,10 @@
-IMAGE   := plaskowski-github-io
-PORT    := 4000
-CONTAINER := jekyll-preview
+PORT := 4000
+JEKYLL := /opt/homebrew/lib/ruby/gems/3.4.0/bin/jekyll
 
-.PHONY: build serve stop open
+.PHONY: serve stop open
 
-build:
-	docker build -t $(IMAGE) .
-
-serve: stop
-	docker run --rm -d \
-	  --name $(CONTAINER) \
-	  -v "$(PWD):/site" \
-	  -p $(PORT):4000 \
-	  $(IMAGE)
-	@echo "Serving at http://localhost:$(PORT)"
-
-stop:
-	docker stop $(CONTAINER) 2>/dev/null || true
+serve:
+	$(JEKYLL) serve --port $(PORT) --watch --livereload
 
 open:
 	open http://localhost:$(PORT)
