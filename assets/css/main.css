@@ -2,11 +2,11 @@
 *, *::before, *::after { box-sizing: border-box; }
 
 :root {
-  --text:           #e2e2e2;
+  --text:           #E6EDF3;
   --muted:          #888;
   --border:         #2e2e2e;
-  --bg:             #141414;
-  --surface:        #1e1e1e;
+  --bg:             #0d1117;
+  --surface:        #161b22;
   --accent:         #6ea8fe;
   --accent-purple:  #a78bfa;
   --accent-light:   #c0d8ff;
@@ -20,15 +20,15 @@
 body {
   font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 1.05rem;
-  font-weight: 300;
+  font-weight: 350;
   line-height: 1.75;
+  letter-spacing: 0.012em;
   color: var(--text);
   background: var(--bg);
   margin: 0;
   padding: 0;
 }
 
-p { font-weight: 300; }
 
 h1, h2, h3, h4, h5, h6 { font-weight: 600; }
 
@@ -193,8 +193,8 @@ main {
   margin: 0 0 1.25rem;
 }
 .note-body li {
-  margin-bottom: 0.6rem;
-  line-height: 1.6;
+  margin-bottom: 0.85rem;
+  line-height: 1.7;
 }
 .note-body li ul {
   margin-top: 0.4rem;
