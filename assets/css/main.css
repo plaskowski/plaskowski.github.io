@@ -2,14 +2,19 @@
 *, *::before, *::after { box-sizing: border-box; }
 
 :root {
-  --text:       #e2e2e2;
-  --muted:      #888;
-  --border:     #2e2e2e;
-  --bg:         #141414;
-  --surface:    #1e1e1e;
-  --accent:     #6ea8fe;
-  --hover-text: #d8d8d8;
-  --max-width:  68ch;
+  --text:           #e2e2e2;
+  --muted:          #888;
+  --border:         #2e2e2e;
+  --bg:             #141414;
+  --surface:        #1e1e1e;
+  --accent:         #6ea8fe;
+  --accent-purple:  #a78bfa;
+  --accent-light:   #c0d8ff;
+  --hover-text:     #d8d8d8;
+  --draft-bg:       #2a2200;
+  --draft-border:   #6b5500;
+  --draft-text:     #ffd966;
+  --max-width:      68ch;
 }
 
 body {
@@ -57,13 +62,13 @@ a:hover { text-decoration: underline; }
   font-size: 0.9rem;
   margin-left: 0.25rem;
   letter-spacing: -0.01em;
-  background: linear-gradient(100deg, #6ea8fe 0%, #a78bfa 100%);
+  background: linear-gradient(100deg, var(--accent) 0%, var(--accent-purple) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 .site-title:hover .dev-suffix {
-  background: linear-gradient(100deg, var(--hover-text) 0%, #c0d8ff 100%);
+  background: linear-gradient(100deg, var(--hover-text) 0%, var(--accent-light) 100%);
   -webkit-background-clip: text;
   background-clip: text;
 }
@@ -97,15 +102,15 @@ main {
 
 /* ── Draft banner (essays & notes) ── */
 .draft-banner {
-  background: #2a2200;
-  border: 1px solid #6b5500;
+  background: var(--draft-bg);
+  border: 1px solid var(--draft-border);
   border-radius: 4px;
   padding: 0.6rem 1rem;
   font-size: 0.875rem;
   margin-bottom: 2.5rem;
-  color: #ffd966;
+  color: var(--draft-text);
 }
-.draft-banner a { color: #ffd966; text-decoration: underline; }
+.draft-banner a { color: var(--draft-text); text-decoration: underline; }
 
 /* ── Placeholder block ── */
 .placeholder {
