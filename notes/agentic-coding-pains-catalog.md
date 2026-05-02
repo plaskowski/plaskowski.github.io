@@ -10,8 +10,6 @@ This is a working catalog of pain points an engineer encounters when using AI co
 
 The catalog groups problems by where they show up in the workflow. Within each group, each item is a distinct, named failure mode. Some are tool gaps; some are interaction design failures; some are structural problems that no current tool addresses at all.
 
----
-
 ## Foundational Misalignment
 
 Agent output is locally correct but globally unaligned with the project's technical and business decisions. The agent never checks for alignment. The engineer is left to bridge the gap on every change.
@@ -24,8 +22,6 @@ Agent output is locally correct but globally unaligned with the project's techni
 - **No org-tech lookup** — does not consult the company-level tech constraints that live outside the repo and does not flag their absence, so it ships solutions that violate them and get rejected at review. Examples: approved languages and libraries, internal SDKs and golden paths, compliance and security requirements, cross-cutting logging/metrics/tracing standards.
 - **Standalone instead of incremental** — generates standalone solutions that do not slot into the existing structure, leaving manual integration to the engineer.
 
----
-
 ## Workflow and Playbook Execution
 
 Problems with making the agent follow the right workflow at the right level of autonomy.
@@ -34,8 +30,6 @@ Problems with making the agent follow the right workflow at the right level of a
 - **Manual step-mode tuning** — user must manually adjust model level, permission mode, and autonomy for each playbook step. Examples: exploration, planning, implementation, verification, and cleanup need different defaults.
 - **Action handoff instead of execution** — agent tells the user to run the next command or perform the next routine step even when the point of agentic workflow is for the agent to execute it.
 - **Manual follow-up branching** — when agent output creates multiple follow-up points, user must first identify them, then manually track which should become separate sessions, tickets, commits, or future tasks.
-
----
 
 ## Scope, Design, and Ambiguity Management
 
@@ -51,8 +45,6 @@ Problems with defining, aligning, and protecting the intended change before and 
 - **Scope drift** — during implementation, the agent deviates from the original task scope or accidentally modifies files that were not supposed to be part of the change.
 - **Acceptance mismatch** — code may compile and test green while still being hard to accept into the product.
 
----
-
 ## Context and Session Hygiene
 
 Problems caused by stale, noisy, or poorly isolated session context.
@@ -60,8 +52,6 @@ Problems caused by stale, noisy, or poorly isolated session context.
 - **Session contamination** — wrong assumptions and dead ends remain in context instead of being truncated back to the last healthy point.
 - **Manual context-size babysitting** — the user must decide when stale or noisy context has made the session unreliable instead of the agent pruning, compressing, or isolating it.
 - **No subtask context isolation** — subtasks run inside the main session, so low-level details pollute the coordinator context instead of being isolated or routed to lighter execution modes.
-
----
 
 ## Supervision Surface and Output Structure
 
@@ -73,8 +63,6 @@ Problems with consuming agent output through chat as the main supervision interf
 - **No output drill-down** — agent output is flat and linear instead of summary-first with expandable layers. Examples: goal, plan, decisions, implementation details, evidence, risks, and reasoning trail.
 - **No supervision surface** — user lacks a compact view for deciding whether to let the agent continue, redirect it, or stop it.
 
----
-
 ## Live Supervision State
 
 Problems with seeing the agent's current operational state while work is active.
@@ -83,8 +71,6 @@ Problems with seeing the agent's current operational state while work is active.
 - **Missing checkpoint packet** — at natural pause points, the agent does not present a compact, structured state packet. Examples: current goal, completed work, key decisions, changed files, open risks, proposed next step, and available user actions (continue, redirect, pause, stop).
 - **Weak milestone visibility** — progress is shown as activity, not as completed checkpoints against the task scope.
 - **External goal tracking** — user has to track the session goal and current sub-goal outside the chat, which becomes worse when one task is split across multiple agent sessions.
-
----
 
 ## Blockers, Hypotheses, and Stop Conditions
 
@@ -96,8 +82,6 @@ Problems with seeing uncertainty, failed paths, blockers, and when the agent sho
 - **Invisible hypothesis trail** — when trying to overcome a problem, it does not expose the current hypothesis, rejected hypotheses, or why it changed direction.
 - **Poor stop conditions** — keeps patching, polishing, or expanding after the useful change is done.
 - **Late surprise cost** — important problems are discovered only in the final summary or diff, when correction is already expensive.
-
----
 
 ## Durable Work State
 
@@ -111,8 +95,6 @@ Problems with preserving agent work as trustworthy state for later review, reuse
 - **Relevant-files gap** — git preserves changed files, but not the broader file context used to understand the task, so later review and resumption lose important context. Examples: files read, investigated, used as patterns, ruled out, or used for orientation.
 - **Chat history as dead weight** — raw chat transcripts preserve activity but not reusable task state; re-reading them costs almost as much as redoing the exploration. Missing extraction: goals, decisions, evidence, risks, and dead ends.
 - **No learning extraction** — agent work does not automatically extract durable learnings about the project, codebase, process, or recurring mistakes that should improve future runs.
-
----
 
 ## Verification, Review, and Credibility
 
@@ -129,8 +111,6 @@ Problems with proving, reviewing, and trusting agent-generated changes.
 - **Rubber-stamp temptation** — high output volume creates pressure to trust changes without enough inspection.
 - **Review-story burden** — user must turn messy agent activity into a coherent PR narrative, logical commits, and reviewer-facing explanation.
 
----
-
 ## Recurring Implementation Failure Modes
 
 Common coding and debugging patterns that make generated changes harder to accept.
@@ -142,8 +122,6 @@ Common coding and debugging patterns that make generated changes harder to accep
 - **Implementation-mirroring tests** — writes unit tests that mirror the current implementation instead of asserting the wanted contract or spec.
 - **Debugging loops** — repeatedly patches symptoms instead of finding the root cause.
 
----
-
 ## External State and System Integration
 
 Problems with keeping surrounding systems of record aligned with agent work.
@@ -151,9 +129,9 @@ Problems with keeping surrounding systems of record aligned with agent work.
 - **Manual work orchestration** — surrounding work-state tracking remains human-owned instead of agent-assisted. Examples: open items, decisions, follow-ups, Jira state, PR state, and stakeholder updates.
 - **No external-state sync** — agent progress does not automatically update surrounding systems of record. Examples: Jira, PR description, notes, next actions, or manager/team status.
 
----
+## Appendix
 
-## Appendix: Resulting Human Cost
+### Resulting Human Cost
 
 These are the downstream costs that accumulate when the gaps above are not addressed. They are not separate failure modes; they are the human price of everything above.
 
@@ -164,8 +142,6 @@ These are the downstream costs that accumulate when the gaps above are not addre
 - **Trust erosion** — because failures are subtle and verification is weak, every generated change starts to feel suspicious.
 - **Overload pressure** — because agents can produce more work than the human can safely inspect, the user is tempted to keep too many risky threads in flight.
 
----
-
-## Intentional exclusions
+### Intentional exclusions
 
 Out of scope for this catalog: governance and compliance, privacy and data handling, licensing and IP risk, token cost and usage accounting, vendor-specific plan or product differences, multi-session workspace management, tool and window containment across IDE/browser/terminal/OS, cross-session hierarchy and agent-to-agent coordination, and backward compatibility (shipped versions, persisted data, in-flight migrations).
