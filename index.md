@@ -1,63 +1,59 @@
-# Piotr Laskowski
+---
+layout: default
+title: Piotr Laskowski
+---
 
-### Senior Java Developer, Warszawa
+<style>
+  .landing-tagline {
+    font-size: 1.15rem;
+    color: #555;
+    margin: 0 0 3rem;
+    font-style: italic;
+  }
+  .essay-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    padding: 1.25rem 1.5rem;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    transition: border-color 0.15s;
+  }
+  .essay-card:hover {
+    border-color: #0057b8;
+    text-decoration: none;
+  }
+  .essay-card h2 {
+    font-size: 1.2rem;
+    margin: 0 0 0.3rem;
+    color: #0057b8;
+  }
+  .essay-card .subtitle {
+    font-size: 0.95rem;
+    color: #555;
+    font-style: italic;
+    margin: 0 0 0.5rem;
+  }
+  .essay-card .meta {
+    font-size: 0.8rem;
+    color: #999;
+  }
+  .section-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #999;
+    margin-bottom: 1rem;
+  }
+</style>
 
-7 lat doświadczenia jako programista w różnych technologiach, z tego 5 lat Java server-side i technologie webowe. Stawiam na jakość kodu, preferuję pracę po stronie back-endu.
+<p class="landing-tagline">A quiet outlet for loud thoughts about software engineering.</p>
 
-# Witaj strudzony rekruterze!
-Cieszę się, że trafiłaś(eś) na mój profil zawodowy w sieci. Znajdziesz tu opis jakich projektów szukam (a jakich nie) oraz moje aktualne CV. Jeśli wydaje Ci się, że masz ofertę spełniającą wszystkie krytyczne wymagania oraz większość pozostałych nie wahaj się ani chwili!
+<p class="section-label">Essays</p>
 
-### Kontakt
-p KROPKA laskowski MAŁPA echo KROPKA waw KROPKA pl
-
-### Dostępność
-*(Stan z 26 kwietnia 2020)* Jestem zadowolony z obecnej pracy więc nigdzie się nie wybieram, ale w razie upadku meteorytu pracuję na UoP ze standardowym okresem wypowiedzienia.
-
-# Szczegółowe oczekiwania co do ofert
-Z góry dziękuję za Pani/Pana czas poświęcony na zapoznanie się z poniższymi wymaganiami, a w rezultacie za mój czas zaoszczędzony na nie czytaniu nieadekwatnych ofert.
-Pozwoliłem sobie spisać podstawowe kryteria, które oferta pracy musi spełnić aby wzbudzić moje zainteresowanie. Będę wdzięczny za uwzględnienie ich przed wysłaniem mi kolejnej oferty pracy.
-
-### Krytyczne wymagania
-- technologie: Java server-side (conajmniej Java 8), może być trochę front-endu
-- lokalizacja: w bezpośrednim sąsiedztwie pierwszej linii metra (stacje Dworzec Gdański, Ratusz Arsenał, Świętokrzyska, Centrum, Politechnika, Pole Mokotowskie) lub Żoliborz/Bielany
-
-### Co zdyskwalifikuje ofertę
-- open space powyżej 12 osób
-- projekt dla sektora publicznego lub ze środków z UE
-- projekt wdrożenia gotowego systemu
-- przestarzałe technologie: Java 7, Spring 3, Maven 2, Ant, JSF, Struts, SVN, EJB 2.x, IE8, IE9
-- konieczność relokacji lub podróży > 12 dni w roku
-
-### Co mnie zachęci do oferty
-- projekt mający przynieść klientowi znaczącą korzyść biznesową
-- ścisła współpraca zespołu developerskiego z biznesem
-- zespół stawiający na software craftsmanship (m.in. clean code, code review, collective ownership)
-- wielkość zespołu projektowego od 4 do 12 osób
-- zwinna metodyka pracy
-- nie jestem biegły w angielskim (oceniłbym siebie na "zakurzone" B2)
-- nie mam warunków do pracy zdalnej
-- zamieszczenie w mailu o ofercie podstawowych informacji:
-  - dokładna lokalizacja miejsca pracy (z dokładnością do najbliższego skrzyżowania)
-  - tematyka projektu
-  - wielkość zespołu projektowego 
-  - czy to projekt nowego systemu czy rozwój istniejącego? Jeśli rozwój to ile lat ma system?
-  
-# CV
-  
-## Doświadczenie zawodowe
-- wrz 2017 - obecnie - Senior Java Developer w [Syncron](https://www.syncron.com/)
-  - Full-stack development of company main product [Syncron Inventory](https://www.syncron.com/solutions/inventory-management/) (Spring, Hibernate, Java 8, JSF).
-- gru 2014 – sie 2017 - Starszy Programista Java w [BMS](https://bms.com.pl/)
-  - Development of back-office system for a major bank department (Spring, Hibernate, Java 8, AngularJS 1.2).
-- mar 2014 – lis 2014 - Programista Java w [Lingaro](https://lingarogroup.com/)
-  - smaller projects in Groovy, Grails, JavaScript
-- a reszta to już prehistoria ;)
-
-## Biegłość
-- clean code,
-- code review, 
-- angielski (B2),
-- Java 8, Spring 4, Hibernate 4.2, AngularJS 1.2, JS+HTML+CSS.
-
-## Wykształcenie
-- Magister informatyki na wydziale [MIM Uniwersytetu Warszawskiego](https://www.mimuw.edu.pl/) (2006-2011, dyplom w 2013)
+<a class="essay-card" href="/essays/build-the-harness-or-go-home/">
+  <h2>The Honeymoon Is Over: Build the Harness or Go Home</h2>
+  <p class="subtitle">Why coding agents automate the easy part and multiply the hard part.</p>
+  <p class="meta">May 2, 2026 &nbsp;·&nbsp; draft</p>
+</a>
