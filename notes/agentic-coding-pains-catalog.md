@@ -157,7 +157,13 @@ These are the downstream costs that accumulate when the gaps above are not addre
 - **Trust erosion** — because failures are subtle and verification is weak, every generated change starts to feel suspicious.
 - **Overload pressure** — because agents can produce more work than the human can safely inspect, the user is tempted to keep too many risky threads in flight.
 
-## Appendix B — Intentional Exclusions
+## Appendix B — Out of Scope
 
-Out of scope for this catalog: governance and compliance, privacy and data handling, licensing and IP risk, token cost and usage accounting, vendor-specific plan or product differences, multi-session workspace management, tool and window containment across IDE/browser/terminal/OS, cross-session hierarchy and agent-to-agent coordination, and backward compatibility (shipped versions, persisted data, in-flight migrations).
-{: .section-lead}
+- Governance and compliance
+- Privacy and data handling
+- Licensing and IP risk
+- Token cost and usage accounting
+- Multi-session workspace management
+- Tool and window containment across IDE, browser, terminal, and OS
+- Cross-session hierarchy and agent-to-agent coordination
+- Backward compatibility (shipped versions, persisted data, in-flight migrations)

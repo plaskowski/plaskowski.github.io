@@ -210,7 +210,7 @@ main {
 .note-body p { margin: 0 0 1.25rem; }
 .section-lead {
   font-style: italic;
-  font-size: 0.95rem;
+  font-size: 1.05rem;
   color: var(--muted);
 }
 .note-body ul {
@@ -218,7 +218,7 @@ main {
   margin: 0 0 1.25rem;
 }
 .note-body li {
-  margin-bottom: 0.85rem;
+  margin-bottom: 0.5rem;
   line-height: 1.7;
 }
 .note-body li ul {
