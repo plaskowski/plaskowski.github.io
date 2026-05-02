@@ -10,6 +10,11 @@ This is a working catalog of pain points an engineer encounters when using AI co
 
 The catalog groups problems by where they show up in the workflow. Within each group, each item is a distinct, named failure mode. Some are tool gaps; some are interaction design failures; some are structural problems that no current tool addresses at all.
 
+**Contents**
+{: #markdown-toc-label}
+* TOC
+{:toc}
+
 ## Foundational Misalignment
 
 Agent output is locally correct but globally unaligned with the project's technical and business decisions. The agent never checks for alignment. The engineer is left to bridge the gap on every change.
