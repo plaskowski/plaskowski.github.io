@@ -28,6 +28,7 @@ Agent output is locally correct but globally unaligned with the project's techni
 - **Project tech direction ignored** — treats the project's already-set macro tech direction (architecture style, framework conventions, libraries in use, module boundaries) as open design space rather than a constraint.
 - **No org-tech lookup** — does not consult the company-level tech constraints that live outside the repo and does not flag their absence, so it ships solutions that violate them and get rejected at review.
   - **Examples:** approved languages and libraries, internal SDKs and golden paths, compliance and security requirements, cross-cutting logging/metrics/tracing standards.
+- **First-solution bias** — settles on the first approach that appears workable without evaluating whether alternative solutions would better align with existing patterns, fit the codebase structure, or meet the project's quality bar.
 - **Standalone instead of incremental** — generates standalone solutions that do not slot into the existing structure, leaving manual integration to the engineer.
 
 ## Workflow and Playbook Execution
@@ -54,6 +55,7 @@ Problems with defining, aligning, and protecting the intended change before and 
 - **Missing design checkpoints** — after agreeing on the top-level solution shape, the agent does not pause to align on key design choices before implementation.
   - **Examples:** main concepts, class names, boundaries, and structural choices.
 - **Missing ambiguity escalation rule** — when local context is insufficient or ambiguous, the agent does not clearly decide whether to ask the user, inspect broader sources, or stop instead of silently guessing.
+- **Missing feasibility escalation rule** — when exploration reveals that the requirement conflicts with existing constraints or will cost significantly more than planned, the agent does not escalate for requirement renegotiation before starting implementation; instead it proceeds as if the spec is non-negotiable.
 - **No exploration watchdog** — before code changes start, there is no compact exploration summary for validating whether the discovered direction is relevant, bounded, and sufficient.
 - **Low-value clarification blocking** — agent stops progress to ask a question even when the likely answer is already implied, low-risk, or could be handled as a stated default assumption.
 - **Over-eager execution** — starts editing before the problem shape is stable enough.
@@ -100,6 +102,7 @@ Problems with seeing uncertainty, failed paths, blockers, and when the agent sho
 - **Assumption opacity** — does not surface the assumptions it made unless asked afterwards.
 - **Struggle hiding** — presents the final result without exposing problems it hit along the way, even though the user needs to judge whether those problems were solved correctly.
 - **Hidden blockers** — agent may spend time working around a problem without clearly surfacing that it is blocked or uncertain.
+- **No spec pushback** — when implementation reveals that the requirement conflicts with existing constraints or will take significantly longer than planned, the agent does not escalate for requirement renegotiation; instead it continues trying to implement by the letter, leaving the engineer to discover the cost mismatch late or in the final diff.
 - **Invisible hypothesis trail** — when trying to overcome a problem, it does not expose the current hypothesis, rejected hypotheses, or why it changed direction.
 - **Poor stop conditions** — keeps patching, polishing, or expanding after the useful change is done.
 - **Late surprise cost** — important problems are discovered only in the final summary or diff, when correction is already expensive.
@@ -110,6 +113,7 @@ Problems with preserving agent work as trustworthy state for later review, reuse
 {: .section-lead}
 
 - **No session continuity** — each session starts blank: no understanding of the product, codebase, or prior decisions survives between sessions, so every run must rediscover context from scratch.
+- **No continuation packet** — when context gets heavy mid-task, no way to extract a compact handoff for a fresh session without either re-explaining from scratch or relying on expensive, lossy context compaction that preserves irrelevant detail. Missing: deliberate extraction of forward-looking state — discovered context, decisions, current goal, open items — not compressed history of completed steps.
 - **No durable work packet** — the main work artifacts are not bundled as one resumable unit of work.
   - **Examples:** branch, prompt, task notes, ticket, PR, session state, and verification evidence.
 - **Weak or unsafe resume state** — hard to resume later with a compact, trustworthy view of the work; stale or vague notes can be worse than no saved state because they create false confidence.
