@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% if page.title %}{{ page.title }} — {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="/feed.xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital@1&display=swap" rel="stylesheet">
@@ -27,7 +28,7 @@
   </main>
 
   <footer class="site-footer">
-    <p>© 2026 Piotr Laskowski. All rights reserved.</p>
+    <p>© 2026 Piotr Laskowski. All rights reserved. · <a href="/feed.xml">RSS feed</a>, for the optimistic.</p>
   </footer>
 
 </body>

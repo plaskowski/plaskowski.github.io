@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>https://plaskowski.github.io/</id>
+  <title>Piotr Laskowski</title>
+  <updated>2026-05-07T12:00:00Z</updated>
+  <subtitle>A quiet outlet for nagging thoughts about software engineering.</subtitle>
+  <author>
+    <name>Piotr Laskowski</name>
+  </author>
+  <link href="https://plaskowski.github.io/feed.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://plaskowski.github.io/" rel="alternate" type="text/html"/>
+
+  <entry>
+    <id>https://plaskowski.github.io/notes/agentic-coding-pains-catalog/</id>
+    <title>[DRAFT] Agentic Coding — the Enterprise Engineer's Patient Leaflet</title>
+    <published>2026-05-02T00:00:00Z</published>
+    <updated>2026-05-07T12:00:00Z</updated>
+    <link href="https://plaskowski.github.io/notes/agentic-coding-pains-catalog/" rel="alternate" type="text/html"/>
+    <summary>What breaks when coding agents meet enterprise software delivery.</summary>
+  </entry>
+
+  <!-- Add entries here when publishing posts. Template:
+
+  <entry>
+    <id>https://plaskowski.github.io/{section}/{slug}/</id>
+    <title>Post Title Here</title>
+    <updated>YYYY-MM-DDTHH:MM:SSZ</updated>
+    <link href="https://plaskowski.github.io/{section}/{slug}/" rel="alternate" type="text/html"/>
+    <summary>Post summary or opening text here</summary>
+  </entry>
+
+  -->
+
+</feed>
