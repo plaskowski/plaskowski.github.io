@@ -175,7 +175,8 @@ These are the downstream costs that accumulate when the gaps above are not addre
 - **Attention fragmentation** — because supervision is not structured, agent work becomes another stream of interruptions.
 - **Prompt fatigue** — because direction and context are not captured as durable workflow defaults, the user must repeatedly restate them.
 - **Trust erosion** — because failures are subtle and verification is weak, every generated change starts to feel suspicious.
-- **Overload pressure** — because agents can produce more work than the human can safely inspect, the user is tempted to keep too many risky threads in flight.
+- **Trust-instinct override** — habit of reducing review as collaborators prove reliable is healthy for humans but dangerous for agents that don't learn; must actively suppress a normally-productive social instinct and remember to do so.
+- **WIP explosion** — agent latency creates idle time, tempting the user to start additional threads; work-in-progress accumulates faster than supervision capacity, multiplying context-switching cost and review burden.
 
 ## Appendix B — Out of Scope
 
